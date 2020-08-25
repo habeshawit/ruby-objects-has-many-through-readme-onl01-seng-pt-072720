@@ -40,7 +40,6 @@ class Waiter
     binding.pry
     all_customers = Customer.all.select {|customer| customer.waiter == self}
     all_customers.max_by{|customer| all_customers.count(customer)}
-     
   end
 
 end
